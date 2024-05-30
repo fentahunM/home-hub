@@ -1,12 +1,12 @@
 import express from "express";
 import User from "../models/user.model.js";
-import bycrypt from "bcryptjs";
+import bcrypt from "bcryptjs";
 import errorHandler from "../utils/error.js";
 
 const signup = async (req, res, next) => {
-  const { name, email, password } = req.body;
-  const hashedPassword = bycrypt.hashSync(password, 10);
-  const newUser = new User({ name, email, password: hashedPassword });
+  const { username, email, password } = req.body;
+  const hashedPassword = bcrypt.hashSync(password, 10);
+  const newUser = new User({ username, email, password: hashedPassword });
 
   try {
     await newUser.save();
