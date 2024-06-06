@@ -1,4 +1,4 @@
-import { app } from "../../firebase.js";
+import { app } from "../firebase.js";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { signInSuccess } from "../redux/user/userSlice.js";
