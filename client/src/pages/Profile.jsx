@@ -19,6 +19,7 @@ import {
   signOutUserFailure,
 } from "../redux/user/userSlice";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 function Profile() {
   const { currentUser, loading, error } = useSelector(
@@ -168,7 +169,7 @@ function Profile() {
           onChange={handleChange}
           defaultValue={currentUser.username}
           type="text"
-          placeholder="username"
+          placeholder="Username"
           id="username"
           className="border rounded-lg p-3  "
         />
@@ -176,13 +177,13 @@ function Profile() {
           defaultValue={currentUser.email}
           onChange={handleChange}
           type="email"
-          placeholder="email"
+          placeholder="Email"
           id="email"
           className="border rounded-lg p-3  "
         />
         <input
           onChange={handleChange}
-          type="password"
+          type="Password"
           placeholder="password"
           id="password"
           className="border rounded-lg p-3  "
@@ -193,6 +194,12 @@ function Profile() {
         >
           {loading ? "Loading..." : "Update"}
         </button>
+        <Link
+          className="bg-green-700 text-white p-3 rounded-lg text-center uppercase hover:opacity-95"
+          to="/create-listing"
+        >
+          create listing
+        </Link>
       </form>
       <div className="flex justify-between mt-5">
         <span
