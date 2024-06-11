@@ -196,7 +196,7 @@ function Profile() {
               Error image uplaod (image must be less than 2mb)
             </span>
           ) : filePerc > 0 && filePerc < 100 ? (
-            <span className="text-slate-700">`Uploading ${filePerc}`</span>
+            <span className="text-slate-700">{`Uploading ${filePerc}%`}</span>
           ) : filePerc === 100 ? (
             <span className="text-green-700">Image uploaded successfully</span>
           ) : (
