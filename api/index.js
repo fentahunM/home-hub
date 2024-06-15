@@ -9,7 +9,7 @@ import path from "path";
 dotenv.config();
 // password tL3R66HxBbF8g6HL
 mongoose
-  .connect(process.env.MONGO_LOCAL, {
+  .connect(process.env.MONGO_ATLAS, {
     dbName: "home-hub",
   })
   .then(() => console.log("Connected to MongoDB"))
