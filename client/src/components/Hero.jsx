@@ -30,7 +30,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[70vh] w-full mx-auto ">
+    <section className="relative h-[80vh] w-full mx-auto font-openSans ">
       <div className="swiper absolute inset-0 z-0 blue__gradient">
         <div className="swiper-wrapper">
           {images.map((image, index) => (

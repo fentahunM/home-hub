@@ -8,6 +8,8 @@ import "swiper/css/bundle";
 import ListingItem from "../components/ListingItem";
 import Hero from "../components/Hero";
 import About from "./About";
+import Footer from "../components/Footer";
+import Services from "../components/Services";
 
 export default function Home() {
   const [offerListings, setOfferListings] = useState([]);
@@ -49,7 +51,7 @@ export default function Home() {
     fetchOfferListings();
   }, []);
   return (
-    <div className="relative max-w-[95vw] mx-auto top-[100px]">
+    <div className="relative max-w-[95vw] flex font-openSans flex-col items-start gap-10 mx-auto top-[100px]">
       <Hero />
       <Swiper
         navigation
@@ -74,7 +76,7 @@ export default function Home() {
 
       {/* listing results for offer, sale and rent */}
 
-      <div className=" mx-auto p-3 flex flex-col gap-8 my-10">
+      <div className=" p-3 flex flex-col gap-8">
         <div className="">
           <div className="my-3">
             <h2 className="text-2xl font-semibold text-slate-600">
@@ -136,9 +138,9 @@ export default function Home() {
           )}
         </div>
       </div>
-      <div className="relative top-[-100px]">
-        <About />
-      </div>
+      <Services />
+      <About />
+      <Footer />
     </div>
   );
 }
