@@ -25,7 +25,7 @@ function Header() {
   }, [location.search]);
 
   return (
-    <header className="bg-slate-200 h-[100px] w-full fixed p-3 shadow-md">
+    <header className="bg-slate-200 h-[100px] w-full fixed p-3 z-30 shadow-md">
       <div className=" flex justify-between items-center mx-auto p-3 max-w-6xl ">
         <Link to="/">
           <h1 className="font-bold text-sm sm:text-xl flex flex-wrap ">

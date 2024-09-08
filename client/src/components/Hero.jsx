@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 
@@ -29,7 +30,7 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[80vh] w-[95vw] mx-auto ">
+    <section className="relative h-[70vh] w-full mx-auto ">
       <div className="swiper absolute inset-0 z-0 blue__gradient">
         <div className="swiper-wrapper">
           {images.map((image, index) => (
@@ -61,6 +62,11 @@ function Hero() {
             Discover the best houses for rent and sale in your desired location.
             Start your journey to a new home with HomeHub today!
           </span>
+        </div>
+        <div className="bg-blue-800 p-3 rounded-md hover:opacity-90 transition-transform hover:scale-105">
+          <Link to={"/search"} className="text-2xl text-white font-bold ">
+            Let&apos;s Get Started
+          </Link>
         </div>
       </div>
     </section>
