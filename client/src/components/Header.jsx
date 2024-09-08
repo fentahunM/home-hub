@@ -28,8 +28,8 @@ function Header() {
     <header className="bg-slate-200 h-[100px] w-full fixed p-3 z-30 shadow-md">
       <div className=" flex justify-between items-center mx-auto p-3 max-w-6xl ">
         <Link to="/">
-          <h1 className="font-bold text-sm sm:text-xl flex flex-wrap ">
-            <span className="text-slate-500">HomeHub</span>
+          <h1 className="font-bold text-sm sm:text-xl flex flex-wrap text-blue-800 transition-colors hover:opacity-85">
+            HomeHub
           </h1>
         </Link>
         <form
@@ -47,14 +47,14 @@ function Header() {
             <FaSearch className="text-slate-600" />
           </button>
         </form>
-        <ul className="flex gap-4 ">
+        <ul className="flex gap-4 font-bold ">
           <Link to="/">
-            <li className="hidden sm:inline text-slate-700 hover:underline ">
+            <li className="hidden sm:inline text-blue-700 hover:text-green-700 ">
               Home
             </li>
           </Link>
           <Link to="/about">
-            <li className="hidden sm:inline text-slate-700 hover:underline ">
+            <li className="hidden sm:inline text-blue-700 hover:text-green-700 ">
               About
             </li>
           </Link>
@@ -67,7 +67,7 @@ function Header() {
                 className="rounded-full w-7 h-7 object-cover"
               />
             ) : (
-              <li className="hidden sm:inline text-slate-700 hover:underline ">
+              <li className="hidden sm:inline text-blue-700 hover:underline ">
                 Sign In
               </li>
             )}

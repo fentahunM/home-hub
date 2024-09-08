@@ -51,7 +51,7 @@ export default function Home() {
     fetchOfferListings();
   }, []);
   return (
-    <div className="relative max-w-[95vw] flex font-openSans flex-col items-start gap-10 mx-auto top-[100px]">
+    <div className="relative font-openSans max-w-[95vw] flex flex-col items-start gap-10 mx-auto top-[100px]">
       <Hero />
       <Swiper
         navigation
@@ -79,7 +79,7 @@ export default function Home() {
       <div className=" p-3 flex flex-col gap-8">
         <div className="">
           <div className="my-3">
-            <h2 className="text-2xl font-semibold text-slate-600">
+            <h2 className="text-2xl font-semibold text-blue-600">
               Recent offers
             </h2>
             <Link
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
         <div className="">
           <div className="my-3">
-            <h2 className="text-2xl font-semibold text-slate-600">
+            <h2 className="text-2xl font-semibold text-blue-600">
               Recent places for rent
             </h2>
             <Link
@@ -119,7 +119,7 @@ export default function Home() {
         </div>
         <div className="">
           <div className="my-3">
-            <h2 className="text-2xl font-semibold text-slate-600">
+            <h2 className="text-2xl font-semibold text-blue-600">
               Recent places for sale
             </h2>
             <Link
