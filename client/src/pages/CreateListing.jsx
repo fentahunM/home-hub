@@ -71,7 +71,7 @@ function CreateListing() {
         (snapshot) => {
           const progress =
             (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-          console.log(`Upload is ${Math.round(progress)}% done`);
+          // console.log(`Upload is ${Math.round(progress)}% done`);
         },
         (error) => {
           reject(error);
@@ -117,6 +117,8 @@ function CreateListing() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      console.log(formData);
+      console.log(currentUser);
       if (formData.imageUrls.length < 1)
         return setError("You must uplaod at least one image.");
       if (+formData.regularPrice < +formData.discountPrice)
@@ -136,6 +138,7 @@ function CreateListing() {
       if (data.success === false) {
         setError(data.message);
       }
+      console.log(data);
       navigate(`/listing/${data._id}`);
     } catch (error) {
       setError(error.message);
