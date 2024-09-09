@@ -1,6 +1,6 @@
 import { FaComments, FaHeadset, FaHome, FaSearch } from "react-icons/fa";
 
-const Services = () => {
+const Features = () => {
   const services = [
     {
       title: "Property Listings",
@@ -33,21 +33,21 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-blue-900">
-            Our Services
+            App Features
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <h2 className="mt-4 text-lg text-blue-600">
             Discover the exceptional services we offer to help you find your
             dream home effortlessly.
-          </p>
+          </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-200 rounded-lg p-8 text-center shadow-md hover:scale-105 hover:shadow-lg transition-transform "
+              className="flex flex-col gap-2 items-center bg-gray-200 rounded-lg p-8 text-center shadow-md hover:scale-105 hover:shadow-lg transition-transform "
             >
               <div className="mb-6 text-indigo-500 text-4xl">
-                <i className={service.icon}></i>
+                {service.icon}
               </div>
               <h3 className="text-2xl font-bold text-blue-800 mb-4">
                 {service.title}
@@ -61,4 +61,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Features;
