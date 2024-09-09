@@ -73,9 +73,14 @@ function Header() {
             <Link to="/" onClick={handleToggleMenu}>
               <li className="p-2 rounded-md hover:text-green-700">Home</li>
             </Link>
-            <a href="#about" onClick={handleToggleMenu}>
+            <Link
+              to="/"
+              state={{ scrollTo: "about" }}
+              onClick={handleToggleMenu}
+            >
               <li className="p-2 rounded-md hover:text-green-700">About</li>
-            </a>
+            </Link>
+
             <Link to="/profile" onClick={handleToggleMenu}>
               {currentUser ? (
                 <img
@@ -87,7 +92,7 @@ function Header() {
                 <li className="p-2 rounded-md hover:text-green-700">Sign In</li>
               )}
             </Link>
-            <a href="#about" onClick={handleToggleMenu}>
+            <a href="#" onClick={handleToggleMenu}>
               <li className="p-2 rounded-md hover:text-green-700">
                 See Deployed App
               </li>

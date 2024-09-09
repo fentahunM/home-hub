@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import ListingItem from "../components/ListingItem";
 import Hero from "../components/Hero";
@@ -45,6 +45,19 @@ export default function Home() {
     };
     fetchOfferListings();
   }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    // Check if the state indicates scrolling to "About"
+    if (location.state && location.state.scrollTo === "about") {
+      const aboutSection = document.getElementById("about");
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.state]);
+
   return (
     <div className="relative font-openSans max-w-[95vw] flex flex-col items-start gap-10 mx-auto top-[100px]">
       <Hero />
