@@ -144,8 +144,8 @@ function CreateListing() {
   };
 
   return (
-    <main className="p-3 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-semibold text-center mt-7">
+    <main className="p-3 max-w-4xl mx-auto relative top-[100px]">
+      <h1 className="text-3xl font-semibold text-center my-7">
         Create a Listing
       </h1>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">

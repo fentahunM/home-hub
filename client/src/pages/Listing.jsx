@@ -50,7 +50,7 @@ function Listing() {
   }, [params.listingId]);
 
   return (
-    <main className="relative top-[100px]">
+    <main className="relative top-[100px] mx-10 mb-10">
       {loading && <p className="text-center my-7 text-2xl">Loading...</p>}
       {error && (
         <p className="text-center my-7 text-2xl">Something went wrong!</p>
