@@ -1,7 +1,7 @@
 import { app } from "../firebase.js";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import { useDispatch } from "react-redux";
-import { signInSuccess } from "../redux/user/userSlice.js";
+import { signInFailure, signInSuccess } from "../redux/user/userSlice.js";
 import { useNavigate } from "react-router-dom";
 
 function OAuth() {
@@ -24,6 +24,11 @@ function OAuth() {
         }),
       });
       const data = await res.json();
+      // console.log(data);
+      if (data.success === false) {
+        dispatch(signInFailure(data.message));
+        return;
+      }
       dispatch(signInSuccess(data));
       navigate("/");
     } catch (error) {
