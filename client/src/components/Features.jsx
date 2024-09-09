@@ -5,25 +5,24 @@ const Features = () => {
     {
       title: "Authentication",
       description:
-        "Secure authentication system by creating an account or using your Google account.",
+        "Login to the system by creating an account or using Google account. Users can also update their profile, change password and logout.",
       icon: <FaLock />,
     },
     {
       title: "Property Listings",
       description:
-        "Browse a wide range of properties for rent and sale with or with out offers.",
+        "Create, update, delete and view properties for rent or sale with or with out offers.",
       icon: <FaHome />,
     },
     {
       title: "Advanced Search and Filtering",
-      description:
-        "Use our advanced search filters to quickly find properties.",
+      description: "Advanced search and filters to quickly find properties.",
       icon: <FaSearch />,
     },
     {
       title: "Contact Property Owners",
       description:
-        "Contact property owners or agents directly through our platform to ensure transparent and secure dealings.",
+        "Contact property owners or agents directly through our platform",
       icon: <FaComments />,
     },
   ];
