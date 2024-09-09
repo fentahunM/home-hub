@@ -1,15 +1,10 @@
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaTwitterSquare,
-} from "react-icons/fa";
+import { FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-10 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center">
           {/* About Section */}
           <div>
             <h3 className="text-xl font-bold mb-4">HomeHub</h3>
@@ -19,72 +14,22 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links Section */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-            <ul className="flex gap-6">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
           {/* Social Media Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+            <h3 className="text-xl font-bold mb-4">Follow me</h3>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://twitter.com/fentahun360"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
               >
-                <FaFacebook />
+                <FaTwitterSquare size={20} />
               </a>
+
               <a
-                href="#"
+                href="https://www.linkedin.com/in/fentahun-mengie-1820bb301/"
                 className="text-gray-400 hover:text-white transition-colors duration-300"
               >
-                <FaTwitterSquare />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors duration-300"
-              >
-                <FaLinkedin />
+                <FaLinkedin size={20} />
               </a>
             </div>
           </div>

@@ -1,21 +1,16 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
-import SwiperCore from "swiper";
-import "swiper/css/bundle";
 
 import ListingItem from "../components/ListingItem";
 import Hero from "../components/Hero";
 import About from "./About";
 import Footer from "../components/Footer";
-import Services from "../components/Services";
+import Features from "../components/Features";
 
 export default function Home() {
   const [offerListings, setOfferListings] = useState([]);
   const [saleListings, setSaleListings] = useState([]);
   const [rentListings, setRentListings] = useState([]);
-  SwiperCore.use([Navigation, Autoplay]);
   // console.log(offerListings);
   useEffect(() => {
     const fetchOfferListings = async () => {
@@ -53,26 +48,6 @@ export default function Home() {
   return (
     <div className="relative font-openSans max-w-[95vw] flex flex-col items-start gap-10 mx-auto top-[100px]">
       <Hero />
-      <Swiper
-        navigation
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        loop={true}
-      >
-        {offerListings &&
-          offerListings.length > 0 &&
-          offerListings.map((listing) => (
-            <SwiperSlide key={listing}>
-              <div
-                style={{
-                  background: `url(${listing.imageUrls[0]}) center no-repeat`,
-                  backgroundSize: "cover",
-                }}
-                className="h-[500px]"
-                key={listing._id}
-              ></div>
-            </SwiperSlide>
-          ))}
-      </Swiper>
 
       {/* listing results for offer, sale and rent */}
 
@@ -138,8 +113,10 @@ export default function Home() {
           )}
         </div>
       </div>
-      <Services />
-      <About />
+      <Features />
+      <div id="about">
+        <About />
+      </div>
       <Footer />
     </div>
   );

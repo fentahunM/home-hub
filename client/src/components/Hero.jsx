@@ -55,9 +55,7 @@ function Hero() {
               Welcome
             </span>
           </h1>
-          <h2 className=" font-bold text-4xl">
-            Find Your Dream Home with Ease
-          </h2>
+          <h2 className=" font-bold text-4xl">Find Your Dream Home Easly</h2>
           <span className="mt-4">
             Discover the best houses for rent and sale in your desired location.
             Start your journey to a new home with HomeHub today!
