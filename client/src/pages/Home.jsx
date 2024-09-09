@@ -78,7 +78,7 @@ export default function Home() {
             </Link>
           </div>
           {offerListings && offerListings.length > 0 && (
-            <div className="flex flex-wrap gap-6">
+            <div className="flex flex-wrap gap-4">
               {offerListings.map((listing) => (
                 <ListingItem listing={listing} key={listing._id} />
               ))}
