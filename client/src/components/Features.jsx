@@ -1,30 +1,30 @@
-import { FaComments, FaHeadset, FaHome, FaSearch } from "react-icons/fa";
+import { FaComments, FaLock, FaHome, FaSearch } from "react-icons/fa";
 
 const Features = () => {
   const services = [
     {
+      title: "Authentication",
+      description:
+        "Secure authentication system by creating an account or using your Google account.",
+      icon: <FaLock />,
+    },
+    {
       title: "Property Listings",
       description:
-        "Browse a wide range of properties for rent and sale. Find the perfect home that fits your needs and budget.",
+        "Browse a wide range of properties for rent and sale with or with out offers.",
       icon: <FaHome />,
     },
     {
-      title: "Advanced Search Filters",
+      title: "Advanced Search and Filtering",
       description:
         "Use our advanced search filters to quickly find properties.",
       icon: <FaSearch />,
     },
     {
-      title: "Direct Communication",
+      title: "Contact Property Owners",
       description:
         "Contact property owners or agents directly through our platform to ensure transparent and secure dealings.",
       icon: <FaComments />,
-    },
-    {
-      title: "Professional Support",
-      description:
-        "Get assistance from our dedicated support team to help you navigate the platform and resolve any issues.",
-      icon: <FaHeadset />,
     },
   ];
 
