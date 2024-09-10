@@ -3,12 +3,6 @@ import bcryptjs from "bcryptjs";
 import errorHandler from "../utils/error.js";
 import Listing from "../models/listing.model.js";
 
-const test = (req, res) => {
-  res.json({ message: "Api route is working!" });
-};
-
-export default test;
-
 export const updateUser = async (req, res, next) => {
   if (req.user.id !== req.params.id) {
     return next(errorHandler(401, "You can only update your own account"));
