@@ -69,8 +69,7 @@ function CreateListing() {
       uploadTask.on(
         "state_changed",
         (snapshot) => {
-          const progress =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           // console.log(`Upload is ${Math.round(progress)}% done`);
         },
         (error) => {

@@ -92,14 +92,6 @@ function Header() {
                 <li className="p-2 rounded-md hover:text-green-700">Sign In</li>
               )}
             </Link>
-            <a
-              href="https://home-hub-5bp6.onrender.com"
-              onClick={handleToggleMenu}
-            >
-              <li className="p-2 rounded-md hover:text-green-700">
-                See Deployed App
-              </li>
-            </a>
           </ul>
         </div>
       </div>
