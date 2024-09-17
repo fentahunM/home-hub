@@ -10,7 +10,6 @@ It is built using the MERN stack (MongoDB, Express, React, and Node.js), focusin
 - [Features](#features)
 - [Technologies](#technologies)
 - [Installation](#installation)
-- [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 
 ---
@@ -30,24 +29,25 @@ It is built using the MERN stack (MongoDB, Express, React, and Node.js), focusin
 
 1. **Frontend**:
 
-- [React]('#')
-- [Redux (State Management)]('#')
-- [Tailwind CSS (UI Styling)]('#')
+- [React](https://react.dev/)
+- [Redux (State Management)]('https://react-redux.js.org/)
+- [Tailwind CSS (UI Styling)]('https://tailwindcss.com/)
 
 2. **Backend**:
 
-- [Node.js]('')
-- [Express.js]('')
-- [MongoDB with Mongoose (Database)]('')
+- [Node.js](https://nodejs.org/en)
+- [Express.js(to build our API)](https://expressjs.com/)
+- [MongoDB(Database)](https://www.mongodb.com/)
+- [Mongoose(modeling data)](https://mongoosejs.com/)
 
 3. **Authentication**:
 
-- [JWT (JSON Web Tokens)]('')
-- [Google OAuth]('')
+- [JWT (JSON Web Tokens)](https://jwt.io/)
+- [Google OAuth](https://developers.google.com/identity)
 
 4. **Others**:
 
-- [bcryptjs (Password Hashing)]('')
+- [bcryptjs (Password Hashing)](https://www.npmjs.com/package/bcryptjs)
 
 ---
 
@@ -59,6 +59,7 @@ Make sure you have the following installed on your system:
 
 - Node.js (v14 or higher)
 - MongoDB (Local or MongoDB Atlas)
+- Nodemon
 
 #### **Setup**
 
@@ -89,12 +90,12 @@ cd ..
 5. Create .env files
 
 ```bash
-1. In the root directory
+# 1. In the root directory
 #head over to mongodb atlas create project and put MongoDB Driver connection string here
 MONGO_ATLAS=[MongoDB Driver connection string]
 JWT_SECRET=[your jwt secret]
 
-2. In client directory
+# 2. In client directory
 #head over to firebase create project get api key
 VITE_FIREBASE_API_KEY=[Your API Key]
 ```
@@ -143,3 +144,9 @@ http://localhost:5173/
 - `GET /get`: Get all listings with filters (offer, type, price)
 - `POST /update/:id`: Update a listing
 - `DELETE /delete/:id`: Delete a listing
+
+#### Contact
+
+For any questions or inquiries, please contact me at:
+[Email](mailto:fantahun360@gmail.com)
+[Linkedin](https://www.linkedin.com/in/fentahun-mengie-1820bb301/)
