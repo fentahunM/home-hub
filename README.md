@@ -30,8 +30,8 @@ It is built using the MERN stack (MongoDB, Express, React, and Node.js), focusin
 1. **Frontend**:
 
 - [React](https://react.dev/)
-- [Redux (State Management)]('https://react-redux.js.org/)
-- [Tailwind CSS (UI Styling)]('https://tailwindcss.com/)
+- [Redux (State Management)](https://react-redux.js.org/)
+- [Tailwind CSS (UI Styling)](https://tailwindcss.com/)
 
 2. **Backend**:
 
@@ -148,5 +148,5 @@ http://localhost:5173/
 #### Contact
 
 For any questions or inquiries, please contact me at:
-[Email](mailto:fantahun360@gmail.com)
+[Email](mailto:fantahun360@gmail.com) or  
 [Linkedin](https://www.linkedin.com/in/fentahun-mengie-1820bb301/)
